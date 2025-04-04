@@ -77,7 +77,7 @@
 ### Conclusion
 The quantum IQGAN demonstrates better **feature preservation** (0.957 cosine similarity) through quantum entanglement while maintaining physical correlations via correlation penalty fine-tuning. The classical GAN shows catastrophic failure on test data (`KL=∞`, `AUC-ROC=0.5476`) due to overfitting, despite perfect training metrics (`MSE=0.0002`). Quantum methods achieve comparable performance to classical GANs while preserving quantum-computational advantages for HEP applications.
 
-
+---
 ### Analysis of Model Performance
 
 #### **Classical GAN Model**
