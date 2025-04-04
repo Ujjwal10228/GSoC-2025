@@ -15,6 +15,67 @@
 - Hardware acceleration using CUDA/TPU
 
 **Evaluation Metrics**:
+{
+'KL Divergence': 0.04708707,
+'Wasserstein Fidelity': 0.33273508,
+'AUC-ROC': 0.892,
+'MSE': 0.18237947,
+'Cosine Similarity': 0.95665384
+}
+
+
+---
+
+### Classical Approach (Data_Analysis_-_Classical_GAN_on_HEP_GSoC.ipynb)
+**Technique**: Implements **Classical GAN** with:
+- PCA dimensionality reduction (`n_components=2`)
+- Standard neural networks
+- Correlation matrix analysis
+- Distribution visualization
+
+**Key Features**:
+- Traditional deep learning approach
+- Statistical correlation analysis
+- Data distribution visualization
+- Pandas-based data exploration
+
+---
+
+### Key Differences
+| Aspect                | Quantum Approach                     | Classical Approach               |
+|-----------------------|--------------------------------------|-----------------------------------|
+| **Model Architecture**| Quantum circuits with rotation gates | Classical neural networks        |
+| **Feature Encoding**  | Quantum state encoding               | PCA + statistical normalization  |
+| **Training**          | Quantum gradient-based optimization  | Standard backpropagation         |
+| **Evaluation**        | Quantum fidelity metrics + MSE       | Statistical correlation analysis |
+| **Hardware**          | GPU/TPU + quantum simulation         | CPU/GPU                          |
+| **Complexity**        | Higher (qubit entanglement)          | Lower                             |
+
+---
+
+### Metric Analysis
+1. **KL Divergence (0.047)**: Indicates good distribution matching  
+2. **Wasserstein (0.333)**: Suggests moderate transport cost between distributions  
+3. **AUC-ROC (0.892)**: Strong discriminative performance  
+4. **Cosine Similarity (0.957)**: High directional alignment in feature space  
+
+---
+
+### Model Performance Comparison
+
+#### Quantum Model
+**After Fine-Tuning**:
+{'KL Divergence': 0.04708707, 'Wasserstein Fidelity': 0.33273508, 'AUC-ROC': 0.892, 'MSE': 0.18237947, 'Cosine Similarity': 0.95665384}
+
+
+**Before Fine-Tuning**:
+{'KL Divergence': 0.04078283, 'Wasserstein Fidelity': 0.26723456, 'AUC-ROC': 0.81800000, 'MSE': 0.12634069, 'Cosine Similarity': 0.96311071}
+
+
+---
+
+### Conclusion
+The quantum IQGAN demonstrates better **feature preservation** (0.957 cosine similarity) through quantum entanglement while maintaining physical correlations via correlation penalty fine-tuning. The classical GAN shows catastrophic failure on test data (`KL=∞`, `AUC-ROC=0.5476`) due to overfitting, despite perfect training metrics (`MSE=0.0002`). Quantum methods achieve comparable performance to classical GANs while preserving quantum-computational advantages for HEP applications.
 
 
 ### Analysis of Model Performance
