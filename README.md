@@ -75,10 +75,10 @@
 **Test Data**:
 {'KL Divergence': inf, 'Wasserstein Fidelity': 0.28818943, 'AUC-ROC': 0.5476, 'MSE': 2.49942540, 'Cosine Similarity': 0.15625884}
 
-text
 
 **Training Data**:
 {'KL Divergence': inf, 'Wasserstein Fidelity': 0.01096834, 'AUC-ROC': 0.5004, 'MSE': 0.00022856, 'Cosine Similarity': 0.99988858}
+
 ---
 
 ### Conclusion
