@@ -1,4 +1,4 @@
-# GSoC-2025
+# GSoC-2025 : QML-HEP
 
 ### Quantum Approach (QML_for_HEP_GSoC_Task_4.ipynb)
 **Technique**: Implements **IQGAN** (Invertible Quantum Generative Adversarial Network) using:
