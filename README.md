@@ -1,5 +1,22 @@
 # GSoC-2025
 
+### Quantum Approach (QML_for_HEP_GSoC_Task_4.ipynb)
+**Technique**: Implements **IQGAN** (Invertible Quantum Generative Adversarial Network) using:
+- Quantum neural networks with PennyLane
+- 5-qubit quantum circuits with rotation gates (RY/RX/RZ) and CNOT operations
+- PCA dimensionality reduction (`n_components=2`) with sigmoid transformation
+- Swap test for quantum state comparison
+- Custom log loss function with Adam optimization
+
+**Key Features**:
+- Quantum generator architecture with parameterized quantum circuits
+- Sigmoid transformation maps features to [0, π/2] range
+- Fine-tuning with correlation penalty to maintain feature relationships
+- Hardware acceleration using CUDA/TPU
+
+**Evaluation Metrics**:
+
+
 ### Analysis of Model Performance
 
 #### **Classical GAN Model**
