@@ -5,7 +5,7 @@ The project is based on this research paper - https://arxiv.org/abs/2212.03763 (
 - In which the actual events are miscalssified as background events due to shortcoming of detection mechanism, for which GAN is applied to generate those misclassified events synthetically to get the complete insights of the lost signals.
 
 ### Quantum Approach (QML_for_HEP_GSoC_Task_4.ipynb)
-**Technique**: Implements **IQGAN** (Invertible Quantum Generative Adversarial Network) using:
+**Technique**: Implements **IQGAN** using:
 - Quantum neural networks with PennyLane
 - 5-qubit quantum circuits with rotation gates (RY/RX/RZ) and CNOT operations
 - PCA dimensionality reduction (`n_components=2`) with sigmoid transformation
