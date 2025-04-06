@@ -1,5 +1,9 @@
 # GSoC-2025 : QML-HEP
 
+**About the Project**:
+The project is based on this research paper - https://arxiv.org/abs/2212.03763 (Data driven background estimation in HEP using Generative Adversarial Networks) 
+- In which the actual events are miscalssified as background events due to shortcoming of detection mechanism, for which GAN is applied to generate those misclassified events synthetically to get the complete insights of the lost signals.
+
 ### Quantum Approach (QML_for_HEP_GSoC_Task_4.ipynb)
 **Technique**: Implements **IQGAN** (Invertible Quantum Generative Adversarial Network) using:
 - Quantum neural networks with PennyLane
